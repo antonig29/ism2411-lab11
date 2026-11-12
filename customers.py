@@ -12,7 +12,13 @@ print(customer["tier"])
 print(customer["ytd_spend"])
 print(customer)
 
-
 #Exercise 2
+customer["phone"] = "123-456-7890"
+print(customer["phone"])
 
+customer["tier"] = "platinum"
+print(customer)
+
+del customer["email"]
+print(customer) 
 
