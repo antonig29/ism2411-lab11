@@ -72,3 +72,19 @@ catalog = {"Widget A": {"price": 9.99, "stock": 150}, "Gadget C": {"price": 49.9
 for product, info in catalog.items():
     if info["stock"] < 20:
         print(f"LOW STOCK: {product} (only {info['stock']} left)")
+
+
+#Exercise 8
+transactions = [
+    {"region": "South", "amount": 300},                                            
+    {"region": "North", "amount": 150}, 
+    {"region": "South", "amount": 200}
+    ]
+
+summary = {}
+for t in transactions:
+    summary[t["region"]] = summary.get(t["region"], 0) + t["amount"]
+
+for region in summary:
+    print(f"{region}: ${summary[region]:.2f}")
+    
