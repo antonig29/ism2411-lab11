@@ -1,3 +1,9 @@
+#1 I use .get() when a key might be missing so the program doesn't crash and gives a default.
+# i use brackets when the key has to be there so i get an error if something goes wrong
+
+#2 It reminds me of a table in excel which adds amount for each square
+# Python is better for more data because it handled more data better.
+
 #Exercise 1
 customer = {
     "name": "Alice",
@@ -87,4 +93,3 @@ for t in transactions:
 
 for region in summary:
     print(f"{region}: ${summary[region]:.2f}")
-    
