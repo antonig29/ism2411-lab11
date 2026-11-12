@@ -1,7 +1,7 @@
 #Exercise 1
 customer = {
-    "name": "Antoni Gomez",
-    "email": "antoni@example.com",
+    "name": "Alice",
+    "email": "alice@example.com",
     "tier": "gold",
     "ytd_spend": 1500.00
 }
@@ -29,3 +29,12 @@ try:
     print(customer["email"])
 except KeyError:
     print("KeyError: 'email' is not in the dictionary")
+
+#Exercise 4
+for key, value in customer.items():
+    print(f"{key}: {value}")
+
+for item in customer:
+    print(item)
+    
+
